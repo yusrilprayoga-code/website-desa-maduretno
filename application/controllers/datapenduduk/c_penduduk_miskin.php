@@ -1,4 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 class C_penduduk_miskin extends CI_Controller {
 
@@ -36,13 +39,13 @@ class C_penduduk_miskin extends CI_Controller {
         //$colModel['aksi'] = array('AKSI',60,FALSE,'left',2);
 		
 		//Populate flexigrid buttons..
-       /*  $buttons[] = array('Select All','check','btn');
+       $buttons[] = array('Select All','check','btn');
 		$buttons[] = array('separator');
         $buttons[] = array('DeSelect All','uncheck','btn');
         $buttons[] = array('separator');
 		$buttons[] = array('Add','add','btn');
         $buttons[] = array('separator');
-        $buttons[] = array('Delete Selected Items','delete','btn'); */
+        $buttons[] = array('Delete Selected Items','delete','btn');
         $buttons[] = array('separator');
        		
         $gridParams = array(

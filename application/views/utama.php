@@ -78,7 +78,7 @@
 						{
 							echo site_url('c_pengelolaData');
 						}?>"> 
-						<img src="<?php echo base_url(); ?>assetku/img/logo_caringin_nunggal.png" style="float:left; height:fixed; width:30%; margin-top:2px; margin-bottom:2px;"> 
+						<img src="<?php echo base_url(); ?>assetku/img/logo_desa.png" style="float:left; height:fixed; width:30%; margin-top:2px; margin-bottom:2px;"> 
 					</a>
 					</div>
 	    					

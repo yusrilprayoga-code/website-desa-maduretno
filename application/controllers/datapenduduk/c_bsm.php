@@ -35,12 +35,12 @@ class C_bsm extends CI_Controller {
         //$colModel['aksi'] = array('AKSI',60,FALSE,'left',2);
 		
 		//Populate flexigrid buttons..
-       /*  $buttons[] = array('Select All','check','btn');
+       $buttons[] = array('Select All','check','btn');
 		$buttons[] = array('separator');
         $buttons[] = array('DeSelect All','uncheck','btn');
         $buttons[] = array('separator');
 		$buttons[] = array('Add','add','btn');
-        $buttons[] = array('separator');*/
+        $buttons[] = array('separator');
         $buttons[] = array('Delete Selected Items','delete','btn'); 
         $buttons[] = array('separator');
        		

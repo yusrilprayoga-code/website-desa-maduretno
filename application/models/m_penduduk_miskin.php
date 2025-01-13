@@ -36,7 +36,13 @@ class M_penduduk_miskin extends CI_Model {
         //Build count query
         $this->db->select("count(id_keluarga) as record_count")->from($this->_table);
         $record_count = $this->db->get();
-        $row = $record_count->row();
+        if ($record_count) {
+          $row = $record_count->row();
+          $return['record_count'] = $row->record_count;
+      } else {
+          log_message('error', 'Failed to execute count query: ' . $this->db->last_query());
+          $return['record_count'] = 0;  // Return 0 if the query fails
+      }
 
         //Get Record Count
         $return['record_count'] = $row->record_count;
